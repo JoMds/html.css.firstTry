@@ -1,0 +1,493 @@
+/*Responsive hides elements*/
+html,
+body {
+  overflow-x: hidden;
+}
+/*all pages */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* index page*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1px 1px 15px 15px;
+  background-color: #04b0bb;
+  width: 90%;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  flex-wrap: wrap;
+}
+
+.inside-header {
+  padding: 20px;
+}
+.header h1 {
+  padding-left: 50px;
+  font-weight: 700;
+  font-weight: bold;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.inside-header a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+.flex-main h1 {
+  margin: 0;
+  white-space: nowrap;
+}
+.flex-main p {
+  margin: 0;
+  margin-top: 10px;
+}
+.background-header {
+  background-image: url(252301952_331294012134616_3415281995697021160_n.jpg);
+  width: 100vh;
+}
+#background-image {
+  width: 100%;
+  height: 80%;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(
+      0deg,
+      rgba(14, 60, 66, 0.4),
+      rgba(14, 60, 66, 0.4)
+    ),
+    url(252301952_331294012134616_3415281995697021160_n.jpg);
+  backdrop-filter: blur(10px);
+  background-position: center;
+}
+
+/* section index */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px 45px;
+}
+.flex-container h1 {
+  font-size: 50px;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins";
+  font-weight: 700;
+  font-weight: bold;
+  font-size: 54px;
+  padding-bottom: 0px;
+}
+.flex-container p {
+  display: flex;
+  justify-content: center;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 30px;
+}
+
+.flex-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #04b0bb;
+  text-decoration: none;
+  background: #04b0bb;
+  border-radius: 40px;
+  width: 259px;
+  height: 73px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.flex-button {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-main {
+  color: white;
+  max-width: 760px;
+}
+/*Our Cars index */
+.cars-container {
+  display: flex;
+
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.photo-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.photo-container img {
+  object-fit: cover;
+  margin: 10px;
+  width: 412px;
+  height: 326px;
+  border-radius: 2em;
+}
+/* two lines before and after text index(Our Cars)*/
+.cars-container h1 {
+  text-align: center;
+  color: black;
+  font-size: 40px;
+
+  position: relative;
+}
+/* na do to responsive */
+.cars-container h1:before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 5px;
+  background: black;
+  left: 250px;
+  top: 50%;
+  position: absolute;
+}
+.cars-container h1:after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 5px;
+  background: black;
+  right: 250px;
+  top: 50%;
+  position: absolute;
+}
+
+/*Section Price Page*/
+section {
+  margin: 25px 150px 0px;
+  display: grid;
+  grid-template-areas:
+    "h1 h1  "
+    "price  info"
+    "price  info";
+  grid-template-rows: auto 1fr;
+}
+section h1 {
+  margin: 10px;
+  padding: 20px;
+  padding-left: 50px;
+  grid-area: h1;
+  margin-bottom: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+}
+/*Table Price Page */
+table {
+  max-width: 100%;
+  margin-left: 50px;
+  padding: 10px;
+  border-collapse: separate;
+}
+
+tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+tr:first-child td:first-child {
+  border-top-right-radius: 10px;
+}
+tr:first-child td:nth-child(2) {
+  border-top-left-radius: 10px;
+}
+tr:first-child td:nth-child(2) {
+  border-top-right-radius: 10px;
+}
+tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+tr:first-child td:last-child {
+  border-top-left-radius: 10px;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+table tr {
+  height: 50px;
+}
+
+table td {
+  width: 33%;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f5f5;
+}
+
+.Table-header {
+  background-color: #04b0bb;
+}
+
+.info-container {
+  grid-area: info;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+}
+/*Info Price Page */
+.inside-info {
+  margin-left: 150px;
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 405px;
+}
+svg {
+  margin-right: 10px;
+}
+
+.inside-info a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #04b0bb;
+  text-decoration: none;
+  background: #04b0bb;
+  border-radius: 40px;
+  width: 259px;
+  height: 73px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.price-by-night {
+  background-color: #089ba5;
+  font-size: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*Footer Price Page */
+footer {
+  display: block;
+  background-color: #f6f5f5;
+  text-align: center;
+  margin: 0;
+  margin-left: 60px;
+  padding: 0;
+}
+
+/* Contact Page */
+.contact-section {
+  height: 100vh;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.contact-form > h3 {
+  color: #089ba5;
+}
+.contact-form > form {
+  width: 90%;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.contact-form {
+  width: 80%;
+  border-right: 3px solid #04b0bb;
+  height: 80vh;
+}
+.contact-info {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  text-align: center;
+}
+
+/* Button inside contact */
+.inside-contact > a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #04b0bb;
+  text-decoration: none;
+  background: #04b0bb;
+  border-radius: 40px;
+  width: 259px;
+  height: 73px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
+
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+
+.feedback-input {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #04b0bb;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #04b0bb;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: none;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #04b0bb;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #cc4949;
+}
+
+/*media querry gia  to Contact*/
+@media screen and (max-width: 820px) {
+  .contact-section {
+    margin: 50px 0px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-form {
+    display: flex;
+    height: 60%;
+    width: 100%;
+  }
+
+  .contact-info {
+    display: flex;
+    height: 40%;
+    width: 100%;
+  }
+}
+/*media gia index */
+@media screen and (max-width: 820px) {
+  .flex-main h1 {
+    white-space: normal;
+  }
+}
+/* media querry gia to Prices*/
+@media screen and (max-width: 1224px) {
+  #section-price {
+    margin: 0;
+  }
+  #section-price h1 {
+    margin-top: 50px;
+  }
+  table {
+    grid-column: 1 / span 2;
+    margin: 0px;
+  }
+  .inside-info {
+    margin: 0px;
+    border-top: 1px solid black;
+  }
+  .info-container {
+    margin: 0px;
+    height: auto;
+  }
+  #footer-price {
+    grid-column: 1 / span 2;
+    margin: 0px;
+    border-top: 1px solid black;
+  }
+}
+/*header for all pages */
+@media screen and (max-width: 820px) {
+  .inside-header a {
+    padding: 15px;
+  }
+}
+/*Contact*/
+@media screen and (max-width: 820px) {
+  .contact-form {
+    margin-left: 20px;
+    margin-top: 300px;
+    height: 50%;
+    border: none;
+    align-items: center;
+  }
+  .contact-form > h3,
+  h5 {
+    visibility: hidden;
+    display: none;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-section > h1 {
+    display: none;
+    visibility: hidd;
+  }
+  .contact-info {
+    display: flex;
+    margin-top: 50px;
+    padding: 50px;
+  }
+}
